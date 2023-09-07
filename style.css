@@ -8,47 +8,103 @@ body {
     height: 100vh;
     font-family:'Hanken Grotesk', sans-serif;
     font-size:18px;
+    
 }
 
-.container {
-
-}
-
-.result-card {
+.result-card  {
     color: white;
-    background-color: hsl(252, 100%, 67%);
+    background-color: hsl(241, 81%, 54%);
     border-radius: 0 0 2rem 2rem;
     padding: 2.5rem;
-    /*display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
 
 }
 
-/*this is a test222222*/
+h4 {
+    margin-bottom: 1.25rem;
+    color: hsl(241, 100%, 89%);
+
+}
 
 .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border-radius: 50%;
-    
+    width: 8rem;
+    height: 8rem;
     background-color: hsla(256, 72%, 46%, 1);
+    margin: 0 auto;
 }
 
+.score {
+    font-size: 3.75rem;
+    font-weight: bold;
+}
+
+.total {
+    color: hsl(241, 100%, 89%);
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.25rem;
+}
+
+.text p {
+    color: hsl(241, 100%, 89%);
+}
+
+.stat-card {
+    background-color: white;
+    border-radius: 0 0 1.875rem 1.875rem;
+    box-shadow: 0 0 1.25rem hsl(241, 100%, 89%);
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem 1rem;
+
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
 
 .reaction {
-    background-color: rgba(255, 87, 87, 0.377);
+    background-color: hsla(0, 100%, 67%, 0.103)
 }
 
 #reaction {
     color: hsl(0, 100%, 67%);
+    flex-grow: 1;
+
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.103);
+
 }
 
 #memory {
     color: hsl(39, 100%, 56%);
+    flex-grow: 1;
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.103);
 }
 
 #verbal {
     color: hsl(166, 100%, 37%);
+    flex-grow: 1;
 
 }
 
@@ -58,19 +114,51 @@ body {
     align-items: center;
     padding: 1rem;
     border-radius: .5rem;
+    gap: 1rem;
+    margin: 0.625rem 0.3125rem;
+}
+
+.visual {
+    background-color: hsla(234, 85%, 45%, 0.103);
 }
 
 #visual {
     color: hsl(234, 85%, 45%);
-
-
+    flex-grow: 1;
 }
 
+span {
+    color: gray;
+}
 .btn {
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border: none;
     background-color: hsl(224, 30%, 27%);
     color: white;
-    padding: 20px;
-    width: 100%;
+    padding: 1.25rem 30%;
+    margin-top: 0.5rem;
+}
+
+@media (min-width: 450px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 38.125rem;
+        margin: 0 auto;
+        margin-top: 5.625rem;
+        
+    }    
+
+    .result-card {
+        border-radius: 2rem;
+        width: 100%;
+    }
+
+    .stat-card {
+        width:100%;
+        margin: 0 auto;
+        padding:;
+        border-radius: 0 1.875rem 1.875rem 0;
+    }
+    
 }
